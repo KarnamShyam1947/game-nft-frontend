@@ -1,0 +1,752 @@
+<!doctype html>
+<html class="no-js" lang="zxx">
+
+<!-- Mirrored from html.themegenix.com/mykd/tournament-details.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 18 Jan 2025 07:38:42 GMT -->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>VictoryVault</title>
+    <meta name="description" content="eSports and Gaming NFT Template">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Place favicon.ico in the root directory -->
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.png">
+
+    <!-- CSS here -->
+    <link rel="stylesheet" href="assets/css/plugins.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.15.10/dist/sweetalert2.all.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.15.10/dist/sweetalert2.min.css">
+
+    <!-- Page-Revealer -->
+    <script src="assets/js/tg-page-head.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.15.10/dist/sweetalert2.all.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.15.10/dist/sweetalert2.min.css">
+
+    <style>
+        /* General table styles */
+        table {
+            width: 100%;
+            border-collapse: separate;
+            border-spacing: 0;
+            margin: 20px 0;
+            background: rgba(255, 255, 255, 0.05);
+            border: 2px solid rgba(255, 255, 255, 0.2);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        th, td {
+            padding: 15px;
+            text-align: left;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+            border-right: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        th {
+            background: rgba(255, 255, 255, 0.1);
+            font-weight: 600;
+            text-transform: uppercase;
+            border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+        }
+
+        tr:hover {
+            background: rgba(255, 255, 255, 0.08);
+        }
+
+        tbody tr:last-child td {
+            border-bottom: none;
+        }
+
+        td:last-child, th:last-child {
+            border-right: none;
+        }
+
+        /* Specific styles for tournament players table */
+        .tournament__players {
+            margin: 30px 0;
+        }
+
+        .tournament__players h3 {
+            margin-bottom: 20px;
+        }
+
+        .tournament__players .results-table tr.current-user {
+            background: rgba(76, 175, 80, 0.15);
+        }
+
+        .tournament__players .results-table tr.current-user:hover {
+            background: rgba(76, 175, 80, 0.2);
+        }
+
+        .tournament__players .results-table tr.current-user td {
+            font-weight: 600;
+        }
+
+        /* Specific styles for results table */
+        .tournament__results {
+            margin: 30px 0;
+        }
+
+        .tournament__results h3 {
+            margin-bottom: 20px;
+        }
+
+        /* Add box shadow for more depth */
+        .results-table table, 
+        .tournament__players table {
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <!-- Scroll-top -->
+    <button class="scroll__top scroll-to-target" data-target="html">
+        <i class="flaticon-right-arrow"></i>
+    </button>
+    <!-- Scroll-top-end-->
+
+    <!-- header-area -->
+    <header>
+        <div id="sticky-header" class="tg-header__area transparent-header">
+            <div class="container custom-container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="mobile-nav-toggler"><i class="fas fa-bars"></i></div>
+                        <div class="tgmenu__wrap">
+                            <nav class="tgmenu__nav">
+                                <div class="logo">
+                                    <a href="index-2.html"><img src="assets/img/logo/logo.png" alt="Logo"></a>
+                                </div>
+                                <div class="tgmenu__navbar-wrap tgmenu__main-menu d-none d-xl-flex">
+                                    <ul class="navigation">
+                                        <li class="menu-item-has-children"><a href="javascript:void(0)">Home</a>
+                                            <ul class="sub-menu">
+                                                <li><a href="index-2.html">Home One</a></li>
+                                                <li><a href="index-3.html">Home Two</a></li>
+                                                <li><a href="index-4.html">Home Three</a></li>
+                                                <li><a href="index-5.html">Home Four</a></li>
+                                                <li><a href="index-6.html">Home Five</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="about-us.html">ABOUT US</a></li>
+                                        <li class="active menu-item-has-children"><a href="javascript:void(0)">TOURNAMENT</a>
+                                            <ul class="sub-menu">
+                                                <li><a href="tournament.html">TOURNAMENT</a></li>
+                                                <li class="active"><a href="tournament-details.html">TOURNAMENT Single</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="menu-item-has-children"><a href="javascript:void(0)">PAGES</a>
+                                            <ul class="sub-menu">
+                                                <li class="menu-item-has-children"><a href="javascript:void(0)">Gaming Shop</a>
+                                                    <ul class="sub-menu">
+                                                        <li><a href="shop.html">Shop Page</a></li>
+                                                        <li><a href="shop-details.html">Shop Details</a></li>
+                                                        <li><a href="cart.html">Cart</a></li>
+                                                        <li><a href="checkout.html">Checkout</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li><a href="services.html">Our Services</a></li>
+                                                <li><a href="services-details.html">Services Details</a></li>
+                                                <li><a href="team-details.html">Player Details</a></li>
+                                                <li><a href="login.html">Login</a></li>
+                                                <li><a href="sign-up.html">Sign up</a></li>
+                                                <li><a href="reset-password.html">Forgot Password</a></li>
+                                                <li><a href="404.html">404 Page</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="menu-item-has-children"><a href="javascript:void(0)">News</a>
+                                            <ul class="sub-menu">
+                                                <li><a href="blog.html">Our Blog</a></li>
+                                                <li><a href="blog-details.html">Blog Details</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="contact.html">contact</a></li>
+                                    </ul>
+                                </div>
+                                <div class="tgmenu__action d-none d-md-block">
+                                    <ul class="list-wrap">
+                                        <li class="search"><a href="javascript:void(0)"><i class="flaticon-search-1"></i></a></li>
+                                        <li class="header-btn">
+                                            <a href="login.html" class="tg-border-btn" id="authButton">
+                                                <svg preserveAspectRatio="none" viewBox="0 0 157 48" fill="none">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M131.75 2L155.75 25L131.75 47L148.75 24L131.75 2Z" fill="currentColor"></path>
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M25 1L1 24.5111L25 47L8 23.4889L25 1Z" fill="currentColor"></path>
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M24.75 1L0.75 25L23.75 47H131.75L155.75 25L131.75 1H24.75Z" stroke="currentColor" stroke-width="1.5"></path>
+                                                </svg>
+                                                <i class="flaticon-edit"></i>
+                                                <span id="authButtonText">~sign in</span>
+                                            </a>
+                                        </li>
+                                        <li class="side-toggle-icon">
+                                            <span></span>
+                                            <span></span>
+                                            <span></span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Menu  -->
+        <div class="tgmobile__menu">
+            <nav class="tgmobile__menu-box">
+                <div class="close-btn"><i class="flaticon-swords-in-cross-arrangement"></i></div>
+                <div class="nav-logo">
+                    <a href="index-2.html"><img src="assets/img/logo/logo.png" alt="Logo"></a>
+                </div>
+                <div class="tgmobile__search">
+                    <form action="#">
+                        <input type="text" placeholder="Search here...">
+                        <button><i class="flaticon-loupe"></i></button>
+                    </form>
+                </div>
+                <div class="tgmobile__menu-outer">
+                    <!--Here Menu Will Come Automatically Via Javascript / Same Menu as in Header-->
+                </div>
+                <div class="social-links">
+                    <ul class="list-wrap">
+                        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                        <li>
+                            <a href="#">
+                                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M8.33192 5.92804L13.5438 0H12.3087L7.78328 5.14724L4.16883 0H0L5.46575 7.78353L0 14H1.2351L6.01407 8.56431L9.83119 14H14L8.33192 5.92804ZM6.64027 7.85211L6.08648 7.07704L1.68013 0.909771H3.57718L7.13316 5.88696L7.68694 6.66202L12.3093 13.1316H10.4123L6.64027 7.85211Z" fill="currentColor" />
+                                </svg>
+                            </a>
+                        </li>
+                        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                        <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                        <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <div class="tgmobile__menu-backdrop"></div>
+        <!-- End Mobile Menu -->
+
+        <!-- header-search -->
+        <div class="search__popup-wrap">
+            <div class="search__layer"></div>
+            <div class="search__close">
+                <span><i class="flaticon-swords-in-cross-arrangement"></i></span>
+            </div>
+            <div class="search__wrap text-center">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <h2 class="title">... <span>Search Here</span> ...</h2>
+                            <div class="search__form">
+                                <form action="#">
+                                    <input type="text" name="search" placeholder="Type keywords here" required>
+                                    <button class="search-btn"><i class="flaticon-loupe"></i></button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- header-search-end -->
+
+        <!-- offCanvas-area -->
+        <div class="offCanvas__wrap">
+            <div class="offCanvas__body">
+                <div class="offCanvas__top">
+                    <div class="offCanvas__logo logo">
+                        <a href="index-2.html"><img src="assets/img/logo/logo.png" alt="Logo"></a>
+                    </div>
+                    <div class="offCanvas__toggle">
+                        <i class="flaticon-swords-in-cross-arrangement"></i>
+                    </div>
+                </div>
+                <div class="offCanvas__content">
+                    <h2 class="title">Best Seller of Month Ideas for <span>NFT Wallet</span></h2>
+                    <div class="offCanvas__contact">
+                        <h4 class="small-title">CONTACT US</h4>
+                        <ul class="offCanvas__contact-list list-wrap">
+                            <li><a href="tel:93332225557">+9 333 222 5557</a></li>
+                            <li><a href="mailto:info@webmail.com">info@webmail.com</a></li>
+                            <li>New Central Park W7 Street ,New York</li>
+                        </ul>
+                    </div>
+                    <div class="offCanvas__newsletter">
+                        <h4 class="small-title">Subscribe</h4>
+                        <form action="#" class="offCanvas__newsletter-form">
+                            <input type="email" placeholder="Get News & Updates">
+                            <button type="submit"><i class="flaticon-send"></i></button>
+                        </form>
+                        <p>Subscribe dolor sitamet, consectetur adiping eli. Duis esollici tudin augue.</p>
+                    </div>
+                    <ul class="offCanvas__social list-wrap">
+                        <li>
+                            <a href="#">
+                                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M8.33192 5.92804L13.5438 0H12.3087L7.78328 5.14724L4.16883 0H0L5.46575 7.78353L0 14H1.2351L6.01407 8.56431L9.83119 14H14L8.33192 5.92804ZM6.64027 7.85211L6.08648 7.07704L1.68013 0.909771H3.57718L7.13316 5.88696L7.68694 6.66202L12.3093 13.1316H10.4123L6.64027 7.85211Z"
+                                        fill="currentColor" />
+                                </svg>
+                            </a>
+                        </li>
+                        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                        <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                        <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                    </ul>
+                </div>
+                <div class="offCanvas__copyright">
+                    <p>Copyright © 2024 - By <span>MYKD</span></p>
+                </div>
+            </div>
+        </div>
+        <div class="offCanvas__overlay"></div>
+        <!-- offCanvas-area-end -->
+
+    </header>
+    <!-- header-area-end -->
+
+
+
+    <!-- main-area -->
+    <main class="main--area">
+
+        <!-- breadcrumb-area -->
+        <section class="breadcrumb-area breadcrumb__hide-img" data-background="assets/img/bg/breadcrumb_bg01.jpg">
+            <div class="container">
+                <div class="breadcrumb__wrapper">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="breadcrumb__content">
+                                <h2 class="title">Tournament Details</h2>
+                                <nav aria-label="breadcrumb">
+                                    <ol class="breadcrumb">
+                                        <li class="breadcrumb-item"><a href="index-2.html">Home</a></li>
+                                        <li class="breadcrumb-item active" aria-current="page">Tournament Details</li>
+                                    </ol>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- breadcrumb-area-end -->
+
+        <!-- tournament-details-area -->
+        <section class="tournament__details-area">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="blog-post-wrapper">
+                        <div class="tournament__details-content">
+                            <h2 class="title">zombie land TOURNAMENT max</h2>
+                            <div class="blog-post-meta">
+                                <ul class="list-wrap">
+                                    <li>By<a href="#">Admin</a></li>
+                                    <li><i class="far fa-calendar-alt"></i> Aug 16, 2024</li>
+                                    <li><i class="far fa-comments"></i><a href="#">No comments</a></li>
+                                </ul>
+                            </div>
+                            <p>Excepteur sint occaecat atat non proident, sunt in culpa qui officia deserunt mollit anim id est labor umLor em ipsum dolor amet consteur adiscing Duis elentum solliciin is yaugue euismods Nulla ullaorper. Ipsum is simply dummy text of  printing and typeetting industry. Lorem Ipsum has been the industry's standsaard sipiscing Duis elementum solliciin. Duis aute irure dolor in repderit in voluptate velit esse cillum dolorliq commodo consequat.</p>
+                            <blockquote>
+                                <p>Duis elentum solliciin is yaugue euismods Nulla ullaorper. Ipsum is simply dummy text of printing and typeetting industry.</p>
+                            </blockquote>
+                            <p>Axcepteur sint occaecat atat non proident, sunt in culpa qui officia deserunt mollit anim id est labor umLor em ipsum dolor amet, consteur adiscing Duis elentum solliciin is yaugue euismods Nulla ullaorper. Ipsum is simply dummy text of  printing and typeetting industry. Lorem Ipsum has been the industry's standsaard sipiscing Duis elementum.</p>
+                            <div class="tournament__details-video position-relative">
+                                <img src="assets/img/blog/blog_post03.jpg" alt="img">
+                                <a href="https://www.youtube.com/watch?v=_SAlU-hu8M0" class="popup-video"><i class="flaticon-play"></i></a>
+                            </div>
+                            <p>Axcepteur sint occaecat atat non proident, sunt in culpa qui officia deserunt mollit anim id est labor umLor em ipsum dolor amet, consteur adiscing Duis elentum solliciin is yaugue euismods Nulla ullaorper. Ipsum is simply dummy text of printing.</p>
+                            <div class="tournament__details-form">
+                                <h4 class="tournament__details-form-title">join nft games android</h4>
+                                <p>Simply dummy text of printing and typeetting industry been the industry's</p>
+                                <form action="#">
+                                    <input type="text" placeholder="Name *">
+                                    <input type="text" placeholder="Player ID *" required>
+                                    <input type="email" placeholder="Email *" required>
+                                    <button class="tournament__details-form-btn">Join Now</button>
+                                </form>
+                            </div>
+                            <div class="blog-details-bottom">
+                                <div class="row">
+                                    <div class="col-xl-6 col-md-7">
+                                        <div class="tg-post-tags">
+                                            <h5 class="tags-title">tags :</h5>
+                                            <ul class="list-wrap d-flex flex-wrap align-items-center m-0">
+                                                <li><a href="#">Esports</a>,</li>
+                                                <li><a href="#">Fantasy</a>,</li>
+                                                <li><a href="#">game</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-6 col-md-5">
+                                        <div class="blog-post-share justify-content-start justify-content-md-end">
+                                            <h5 class="share">share :</h5>
+                                            <ul class="list-wrap">
+                                                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                                <li>
+                                                    <a href="#">
+                                                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <path
+                                                                d="M8.33192 5.92804L13.5438 0H12.3087L7.78328 5.14724L4.16883 0H0L5.46575 7.78353L0 14H1.2351L6.01407 8.56431L9.83119 14H14L8.33192 5.92804ZM6.64027 7.85211L6.08648 7.07704L1.68013 0.909771H3.57718L7.13316 5.88696L7.68694 6.66202L12.3093 13.1316H10.4123L6.64027 7.85211Z"
+                                                                fill="currentColor" />
+                                                        </svg>
+                                                    </a>
+                                                </li>
+                                                <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <!-- <div class="blog-post-sidebar">
+                        <aside class="blog-sidebar tournament__sidebar">
+                            <div class="shop__widget">
+                                <h4 class="shop__widget-title">search</h4>
+                                <div class="shop__widget-inner">
+                                    <div class="shop__search">
+                                        <input type="text" placeholder="Search here">
+                                        <button class="p-0 border-0"><i class="flaticon-search"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="shop__widget">
+                                <h4 class="shop__widget-title">TRENDING MATCHES</h4>
+                                <div class="shop__widget-inner">
+                                    <div class="trending__matches-list">
+                                        <div class="trending__matches-item">
+                                            <div class="trending__matches-thumb">
+                                                <a href="#"><img src="assets/img/others/trend_match01.png" alt="img"></a>
+                                            </div>
+                                            <div class="trending__matches-content">
+                                                <div class="info">
+                                                    <h5 class="title"><a href="#">FoxTie Max</a></h5>
+                                                    <span class="price">$ 7500</span>
+                                                </div>
+                                                <div class="play">
+                                                    <a href="https://www.youtube.com/watch?v=a3_o4SpV1vI" class="popup-video"><i class="far fa-play-circle"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="trending__matches-item">
+                                            <div class="trending__matches-thumb">
+                                                <a href="#"><img src="assets/img/others/trend_match02.png" alt="img"></a>
+                                            </div>
+                                            <div class="trending__matches-content">
+                                                <div class="info">
+                                                    <h5 class="title"><a href="#">hatax ninja</a></h5>
+                                                    <span class="price">$ 5500</span>
+                                                </div>
+                                                <div class="play">
+                                                    <a href="https://www.youtube.com/watch?v=a3_o4SpV1vI" class="popup-video"><i class="far fa-play-circle"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="trending__matches-item">
+                                            <div class="trending__matches-thumb">
+                                                <a href="#"><img src="assets/img/others/trend_match03.png" alt="img"></a>
+                                            </div>
+                                            <div class="trending__matches-content">
+                                                <div class="info">
+                                                    <h5 class="title"><a href="#">spartan ii</a></h5>
+                                                    <span class="price">$ 3500</span>
+                                                </div>
+                                                <div class="play">
+                                                    <a href="https://www.youtube.com/watch?v=a3_o4SpV1vI" class="popup-video"><i class="far fa-play-circle"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="shop__widget">
+                                <h4 class="shop__widget-title">ADVERTISEMENT</h4>
+                                <div class="shop__widget-inner">
+                                    <div class="tournament__advertisement">
+                                        <a href="#"><img src="assets/img/others/tournament_ad.jpg" alt="img"></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </aside>
+                    </div> -->
+                </div>
+            </div>
+        </section>
+        <!-- tournament-details-area-end -->
+
+    </main>
+    <!-- main-area-end -->
+
+
+    <!-- footer-start -->
+    <footer class="footer-style-one">
+        <div class="footer__top-wrap">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-4 col-lg-5 col-md-7">
+                        <div class="footer-widget">
+                            <div class="footer-logo logo">
+                                <a href="index-2.html"><img src="assets/img/logo/logo.png" alt="Logo"></a>
+                            </div>
+                            <div class="footer-text">
+                                <p class="desc">Lorem ipsum dolor sitamet consectur adipiscing Duis esollici tudin augue euismod. Nulla ullam dolor sitamet consectetur</p>
+                                <p class="social-title">Active <span>With Us <i class="fas fa-angle-double-right"></i></span></p>
+                                <div class="footer-social">
+                                    <a href="#"><img src="assets/img/icons/social_icon01.png" alt="iocn"></a>
+                                    <a href="#"><img src="assets/img/icons/social_icon02.png" alt="iocn"></a>
+                                    <a href="#"><img src="assets/img/icons/social_icon03.png" alt="iocn"></a>
+                                    <a href="#"><img src="assets/img/icons/social_icon04.png" alt="iocn"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-2 col-lg-3 col-md-5 col-sm-6">
+                        <div class="footer-widget widget_nav_menu">
+                            <h4 class="fw-title">quick link</h4>
+                            <ul class="list-wrap menu">
+                                <li><a href="#">Gaming</a></li>
+                                <li><a href="#">Product</a></li>
+                                <li><a href="#">All NFTs</a></li>
+                                <li><a href="#">Social Network</a></li>
+                                <li><a href="#">Domain Names</a></li>
+                                <li><a href="#">Collectibles</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-xl-2 col-lg-3 col-md-5 col-sm-6">
+                        <div class="footer-widget widget_nav_menu">
+                            <h4 class="fw-title">Supports</h4>
+                            <ul class="list-wrap menu">
+                                <li><a href="#">Setting & Privacy</a></li>
+                                <li><a href="#">Help & Support</a></li>
+                                <li><a href="#">Live Auctions</a></li>
+                                <li><a href="#">Item Details</a></li>
+                                <li><a href="#">24/7 Supports</a></li>
+                                <li><a href="#">Our News</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-5 col-md-7">
+                        <div class="footer-widget">
+                            <h4 class="fw-title">Newsletter</h4>
+                            <div class="footer-newsletter">
+                                <p>Subscribe our newsletter to get our latest update & newsconsectetur</p>
+                                <form action="#" class="footer-newsletter-form">
+                                    <input type="email" placeholder="Your email address">
+                                    <button type="submit"><i class="flaticon-paper-plane"></i></button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright__wrap">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-md-7">
+                        <div class="copyright__text">
+                             <p>Copyright © 2024 - All Rights Reserved By <span>VictoryVault</span></p>
+                        </div>
+                    </div>
+                    <div class="col-md-5">
+                        <div class="copyright__card text-center text-md-end">
+                            <img src="assets/img/others/payment_card.png" alt="img">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- footer-start-end -->
+
+
+
+    <!-- JS here -->
+    <script src="assets/js/vendor/jquery-3.6.0.min.js"></script>
+    <script src="assets/js/plugins.js"></script>
+    <script src="assets/js/ajax-form.js"></script>
+    <script src="assets/js/main.js"></script>
+
+    <!-- Add this new script -->
+    <script>
+        
+        const urlParams = new URLSearchParams(window.location.search);
+        
+        // Get specific parameter
+        const paramValue = urlParams.get('id'); 
+        const currentUser = JSON.parse(localStorage.getItem('currentUser'));
+
+        const join = (id) => {
+            fetch(`http://localhost:8080/api/v1/user/register-tournament/${id}`, {
+                method: 'GET',
+                headers: {
+                    'Authorization': `Bearer ${JSON.parse(localStorage.getItem('currentUser')).accessToken}`
+                }
+            })
+            .then(response => response.json())
+            .then(data => {
+                console.log('Tournament data:', data);
+                Swal.fire({
+                    title: 'Success',
+                    text: 'You have joined the tournament',
+                    icon: 'success'
+                });
+            })
+            .catch(error => {
+                console.error('Error fetching tournament details:', error);
+            });
+        }
+
+        function updateTournamentDetails(tournament) {
+            // Update title and breadcrumb
+            document.querySelector('.breadcrumb__content .title').textContent = tournament.name;
+            
+            // Update main tournament content
+            const contentHTML = `
+                <h2 class="title">${tournament.name}</h2>
+                <div class="blog-post-meta">
+                    <ul class="list-wrap">
+                        <li>By<a href="#">Host ID: ${tournament.hostUserid}</a></li>
+                        <li><i class="far fa-calendar-alt"></i> ${new Date(tournament.startTime).toLocaleDateString()}</li>
+                        <li><i class="far fa-users"></i>${tournament.registerParticipates}/${tournament.totalParticipates} Participants</li>
+                    </ul>
+                </div>
+                <p>${tournament.description}</p>
+                
+                <blockquote>
+                    <p><strong>Rules:</strong> ${tournament.rules}</p>
+                </blockquote>
+                <div class="tournament__details-video position-relative">
+                    <img src="assets/img/blog/blog_post03.jpg" alt="img">
+                    <a href="https://www.youtube.com/watch?v=_SAlU-hu8M0" class="popup-video"><i class="flaticon-play"></i></a>
+                </div>
+
+                <div class="tournament__details-info">
+                    <ul class="list-wrap">
+                        <li><strong>Status:</strong> ${tournament.status}</li>
+                        <li><strong>Entry Fee:</strong> $${tournament.entryFee}</li>
+                        <li><strong>Prize Pool:</strong> $${tournament.prizePool}</li>
+                        <li><strong>Start Time:</strong> ${new Date(tournament.startTime).toLocaleString()}</li>
+                        <li><strong>End Time:</strong> ${new Date(tournament.endTime).toLocaleString()}</li>
+                    </ul>
+                </div>
+
+                ${tournament.registerUsers && tournament.registerUsers.length > 0 ? `
+                                <div class="tournament__players">
+                                    <h3>Registered Players</h3>
+                                    <div class="results-table">
+                                        <table>
+                                            <thead>
+                                                <tr>
+                                                    <th>Player ID</th>
+                                                    <th>Name</th>
+                                                    <th>Status</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                ${tournament.registerUsers.map(user => `
+                                                    <tr class="${user.id === currentUser.id ? 'current-user' : ''}">
+                                                        <td>#${user.id}</td>
+                                                        <td>${user.name} ${user.id === currentUser.id ? '(You)' : ''}</td>
+                                                        <td>Registered</td>
+                                                    </tr>
+                                                `).join('')}
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            ` : `
+                                <div class="tournament__players">
+                                    <h3>Registered Players</h3>
+                                    <p>No players registered yet.</p>
+                                </div>
+                            `}
+
+                ${tournament.results.length > 0 ? `
+                    <div class="tournament__results">
+                        <h3>Tournament Results</h3>
+                        <div class="results-table">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>Rank</th>
+                                        <th>Performance</th>
+                                        <th>Prize Amount</th>
+                                        <th>Status</th>
+                                        <th>Remarks</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    ${tournament.results.map(result => `
+                                        <tr class="${result.userId === currentUser.id ? 'current-user' : ''}">
+                                            <td>#${result.rank}</td>
+                                            <td>${result.performance}</td>
+                                            <td>$${result.prizeAmount}</td>
+                                            <td>${result.status}</td>
+                                            <td>${result.remarks}</td>
+                                        </tr>
+                                    `).join('')}
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                ` : ''}
+
+                <div class="tournament__details-form">
+                    <h4 class="tournament__details-form-title">Join ${tournament.name}</h4>
+                    <p>${tournament.description}</p>
+                    <form action="#" class="join-tournament-form">
+                        <input type="hidden" name="tournamentId" value="${tournament.id}">
+                      
+
+                        <button type="button" onclick="join(${tournament.id})" class="tournament__details-form-btn" 
+                            ${tournament.status !== 'CREATED' ? 'disabled' : ''}>
+                            ${currentUser && currentUser.id === tournament.hostUserid && tournament.status === 'CREATED' ? 'Upload Results' :
+                            tournament.status === 'CREATED' ? 'Join Now' : 'Registration Closed'}
+                        </button>
+                    </form>
+                </div>
+            `;
+
+            
+
+            // Update the content
+            document.querySelector('.tournament__details-content').innerHTML = contentHTML;
+
+        }
+
+        // Fetch and update the UI
+        fetch(`http://localhost:8080/api/v1/tournaments/${paramValue}`, {
+            headers: {
+                'Authorization': `Bearer ${JSON.parse(localStorage.getItem('currentUser')).accessToken}`
+            }
+        })
+            .then(response => response.json())
+            .then(data => {
+                console.log('Tournament data:', data);
+                updateTournamentDetails(data);
+            })
+            .catch(error => {
+                console.error('Error fetching tournament details:', error);
+                document.querySelector('.tournament__details-content').innerHTML = `
+                    <div class="error-message">
+                        <h2>Error loading tournament details</h2>
+                        <p>Please try again later</p>
+                    </div>
+                `;
+            });
+    </script>
+    <script src="assets/js/auth/auth.js"></script>
+</body>
+
+
+<!-- Mirrored from html.themegenix.com/mykd/tournament-details.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 18 Jan 2025 07:38:42 GMT -->
+</html>
